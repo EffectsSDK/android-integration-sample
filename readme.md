@@ -490,9 +490,3 @@ Results of pipeline work will be available here as android bitmap.
 | Parameter name | Parameter type | Description                           |
 |----------------|----------------|---------------------------------------|
 | bitmap         | Bitmap         | ARGB android bitmap with all effects. |
-
-
-
-| Parameter name | Parameter type | Description |
-|----------------|----------------|-------------|
-||||
