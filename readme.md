@@ -173,15 +173,16 @@ Enable\disable beautification mode.
 |----------------|----------------|------------------------------------------------------------------------------|
 | isEnabled      | Boolean        | Set true if you need to activate the beautification feature, else set false. |
 
-#### enableColorCorrection
+#### setColorCorrectionMode
 
-_fun enableColorCorrection(isEnabled: Boolean)_
+_fun setColorCorrectionMode(mode: ColorCorrectionMode)_
 
-Enable\disable color correction mode.
+Enable\disable color correction mode. Awailable modes: NO_FILTER_MODE, COLOR_CORRECTION (with neural network), COLOR_GRADING(map color cheme
+between two images), PRESET_MODE(pre-defined filters).
 
-| Parameter name | Parameter type | Description                                                              |
-|----------------|----------------|--------------------------------------------------------------------------|
-| isEnabled      | Boolean        | Set true if you need to improve the image color scheme and false if not. |
+| Parameter name | Parameter type      | Description                                     |
+|----------------|---------------------|-------------------------------------------------|
+| mode           | ColorCorrectionMode | Type of color correction algorithm for pipeline |
 
 #### enableFpsCounter
 
@@ -407,15 +408,36 @@ Enable\disable beautification mode.
 |----------------|----------------|------------------------------------------------------------------------------|
 | isEnabled      | Boolean        | Set true if you need to activate the beautification feature, else set false. |
 
-#### enableColorCorrection
+#### setColorCorrectionMode
 
-_fun enableColorCorrection(isEnabled: Boolean)_
+_fun setColorCorrectionMode(mode: ColorCorrectionMode)_
 
-Enable\disable color correction mode.
+Enable\disable color correction mode. Awailable modes: NO_FILTER_MODE, COLOR_CORRECTION (with neural network), COLOR_GRADING(map color cheme
+between two images), PRESET_MODE(pre-defined filters).
 
-| Parameter name | Parameter type | Description                                                              |
-|----------------|----------------|--------------------------------------------------------------------------|
-| isEnabled      | Boolean        | Set true if you need to improve the image color scheme and false if not. |
+| Parameter name | Parameter type      | Description                                     |
+|----------------|---------------------|-------------------------------------------------|
+| mode           | ColorCorrectionMode | Type of color correction algorhitm for pipeline |
+
+#### setColorGradingReferenceImage
+
+_fun setColorGradingReferenceImage(bitmap: Bitmap)_
+
+Set reference image for color grading mode
+
+| Parameter name | Parameter type | Description            |
+|----------------|----------------|------------------------|
+| bitmap         | Bitmap         | Reference image bitmap |
+
+#### setImageFilter
+
+_fun setImageFilter(filter: ImageFilterPreset)_
+
+Set pre-defined filter for color correction
+
+| Parameter name | Parameter type    | Description   |
+|----------------|-------------------|---------------|
+| filter         | ImageFilterPreset | Lut for image |
 
 #### setBeautificationPower
 
