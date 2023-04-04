@@ -132,6 +132,16 @@ Set pipeline mode (remove, replace, blur, no effects).
 |----------------|----------------|------------------------|
 | mode           | PipelineMode   | Pipeline mode constant |
 
+#### setSegmentationMode
+
+_fun setSegmentationMode(mode: SegmentationMode)_
+
+Set segmentation model (portrait/landscape/auto).
+
+| Parameter name | Parameter type   | Description                 |
+|----------------|------------------|-----------------------------|
+| mode           | SegmentationMode | Selected segmentation model |
+
 #### setBackground
 
 _fun setBackground(bitmap: Bitmap)_
@@ -291,6 +301,12 @@ Return true if frames are flipped by the X axis.
 _fun getZoomLevel()_
 
 Return current zoom level (face size in percent).
+
+#### getSegmentationMode
+
+_fun getSegmentationMode()_
+
+Return used segmentation model(portrait/landscape/auto).
 
 #### isBeautificationEnabled
 
@@ -458,6 +474,16 @@ Set background image for replacement mode.
 | Parameter name | Parameter type | Description                       |
 |----------------|----------------|-----------------------------------|
 | image          | Bitmap         | Android bitmap (ARGB_8888 format) |
+
+#### setSegmentationMode
+
+_fun setSegmentationMode(mode: SegmentationMode)_
+
+Set segmentation model (portrait/landscape/auto).
+
+| Parameter name | Parameter type   | Description                 |
+|----------------|------------------|-----------------------------|
+| mode           | SegmentationMode | Selected segmentation model |
 
 #### release
 
