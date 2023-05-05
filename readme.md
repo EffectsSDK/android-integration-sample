@@ -11,8 +11,8 @@
     2. implementation 'com.google.flogger:flogger-system-backend:0.6'
     3. implementation 'com.google.guava:guava:27.0.1-android'
 2. Import AAR file by using android studio interface, or add it to your gradle script manually
-3. Call VBSDK.initialize(context) method in your Application class (or Activity class) to load native library
-4. Call VBSDK.createSDKFactory(context) to get SDKFactory instance
+3. Call EffectsSDK.initialize(context) method in your Application class (or Activity class) to load native library
+4. Call EffectsSDK.createSDKFactory(context) to get SDKFactory instance
 
 ### Usage
 
@@ -27,15 +27,43 @@
 CameraPipeline handles camera input automatically. You should call the startPipeline() method to run it. Use setOutputSurface() method to
 attach a Surface object to the pipeline. You still can use onFrameAvailableListener to get Bitmap images from the pipeline.
 
+### Code example
+
+```
+EffectsSDK.initialize(applicationContext)
+private val sdkFactory = EffectsSDK.createSDKFactory()
+private val pipeline = sdkFactory.createCameraPipelineBuilder()
+            .setContext(activityLink)
+            .setMode(ConfigMapper.map(sdkConfig.pipelineMode))
+            .setBlurParams(sdkConfig.blurRadius, sdkConfig.blurQuality)
+            .setBackground(sdkConfig.backgroundImage)
+            .setGradingReference(sdkConfig.colorGradingReferenceImage)
+            .setForegroundSize(sdkConfig.foregroundSize)
+            .setSegmentationGap(sdkConfig.segmentationGap)
+            .setFaceDetectionGap(sdkConfig.faceDetectionGap)
+            .enableBeautification(sdkConfig.isBeautificationEnabled)
+            .setColorCorrectionMode(ConfigMapper.map(sdkConfig.colorCorrectionMode))
+            .setCamera(ConfigMapper.map(sdkConfig.camera))
+            .setResolution(sdkConfig.resolution)
+            .enableFPSCounter { view.onFPSCounterChanged(it) }
+            .build()
+
+pipeline.setOnFrameAvailableListener { bitmap ->
+            //draw bitmap
+}
+        
+pipeline.startPipeline()
+```
+
 ## Class reference
 
-### VBSDK
+### EffectsSDK
 
 #### initialize
 
 _fun initialize(context: Context)_
 
-Call this method to Initialize VBSDK. Application context or activity could be passed as parameter.
+Call this method to Initialize EffectsSDK. Application context or activity could be passed as parameter.
 
 | Parameter name | Parameter type | Description         |
 |----------------|----------------|---------------------|
@@ -523,7 +551,7 @@ Pass frame to the pipeline.
 
 | Parameter name | Parameter type | Description  |
 |----------------|----------------|--------------|
-| frame          | Frame          | VBSDK frame. |
+| frame          | Frame          | EffectsSDK frame. |
 
 ### OnFrameAvailableListener
 
