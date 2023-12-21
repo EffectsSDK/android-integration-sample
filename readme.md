@@ -248,13 +248,43 @@ Set padding for segmentation mask.
 
 #### enableBeautification
 
-_fun enableBeautification(isEnabled: Boolean)_
+_fun enableBeautification(enabled: Boolean)_
 
 Enable\disable beautification mode.
 
 | Parameter name | Parameter type | Description                                                                  |
 |----------------|----------------|------------------------------------------------------------------------------|
-| isEnabled      | Boolean        | Set true if you need to activate the beautification feature, else set false. |
+| enabled        | Boolean        | Set true if you need to activate the beautification feature, else set false. |
+
+#### enableLowLight
+
+_fun enableLowLight(enabled: Boolean)_
+
+Enable\disable low light mode.
+
+| Parameter name | Parameter type | Description                                                             |
+|----------------|----------------|-------------------------------------------------------------------------|
+| enabled        | Boolean        | Set true if you need to activate the low light feature, else set false. |
+
+#### setColorFilterStrength
+
+_fun setColorFilterStrength(strength: Float)_
+
+Set color filter strength. 0 - original frame, 1 - frame with filters
+
+| Parameter name | Parameter type | Description                              |
+|----------------|----------------|------------------------------------------|
+| strength       | Float          | Filter strength. Value must be in [0..1] |
+
+#### setLowLightFilterStrength
+
+_fun setLowLightFilterStrength(strength: Float)_
+
+Set low light filter strength. 0 - original frame, 1 - frame with filters
+
+| Parameter name | Parameter type | Description                              |
+|----------------|----------------|------------------------------------------|
+| strength       | Float          | Filter strength. Value must be in [0..1] |
 
 #### setColorCorrectionMode
 
@@ -495,7 +525,37 @@ Enable\disable beautification mode.
 
 | Parameter name | Parameter type | Description                                                                  |
 |----------------|----------------|------------------------------------------------------------------------------|
-| isEnabled      | Boolean        | Set true if you need to activate the beautification feature, else set false. |
+| enabled        | Boolean        | Set true if you need to activate the beautification feature, else set false. |
+
+#### enableLowLight
+
+_fun enableLowLight(isEnabled: Boolean)_
+
+Enable\disable low light mode.
+
+| Parameter name | Parameter type | Description                                                             |
+|----------------|----------------|-------------------------------------------------------------------------|
+| enabled        | Boolean        | Set true if you need to activate the low light feature, else set false. |
+
+#### setColorFilterStrength
+
+_fun setColorFilterStrength(strength: Float)_
+
+Set color filter strength. 0 - original frame, 1 - frame with filters
+
+| Parameter name | Parameter type | Description                              |
+|----------------|----------------|------------------------------------------|
+| strength       | Float          | Filter strength. Value must be in [0..1] |
+
+#### setLowLightFilterStrength
+
+_fun setLowLightFilterStrength(strength: Float)_
+
+Set low light filter strength. 0 - original frame, 1 - frame with filters
+
+| Parameter name | Parameter type | Description                              |
+|----------------|----------------|------------------------------------------|
+| strength       | Float          | Filter strength. Value must be in [0..1] |
 
 #### setColorCorrectionMode
 
