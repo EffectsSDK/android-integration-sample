@@ -36,15 +36,16 @@ create a professional and polished appearance during your video calls. Try our w
     1. implementation 'com.google.flogger:flogger:$version'
     2. implementation 'com.google.flogger:flogger-system-backend:$version'
     3. implementation 'com.google.guava:guava:$version'
-    4. implementation 'com.google.code.findbugs:jsr305:$version' 
-    5. implementation 'com.google.protobuf:protobuf-javalite:$version'
-2. Add camerax dependency (if you need the camera pipeline)
+2. Optional:
+    1. implementation 'com.google.code.findbugs:jsr305:3.0.2' 
+    2. implementation 'com.google.protobuf:protobuf-javalite:3.11.4'
+3. Add camerax dependency (if you need the camera pipeline)
     1. implementation "androidx.camera:camera-core:$androidXCameraVersion"
     2. implementation "androidx.camera:camera-camera2:$androidXCameraVersion"
     3. implementation "androidx.camera:camera-lifecycle:$androidXCameraVersion"
-3. Import AAR file by using android studio interface, or add it to your gradle script manually
-4. Call EffectsSDK.initialize(context) method in your Application class (or Activity class) to load native library
-5. Call EffectsSDK.createSDKFactory(context) to get SDKFactory instance
+4. Import AAR file by using android studio interface, or add it to your gradle script manually
+5. Call EffectsSDK.initialize(context) method in your Application class (or Activity class) to load native library
+6. Call EffectsSDK.createSDKFactory(context) to get SDKFactory instance
 
 
 ### Usage
