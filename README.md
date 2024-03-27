@@ -38,7 +38,6 @@ create a professional and polished appearance during your video calls. Try our w
     3. implementation 'com.google.guava:guava:$version'
 2. Optional:
     1. implementation 'com.google.code.findbugs:jsr305:3.0.2' 
-    2. implementation 'com.google.protobuf:protobuf-javalite:3.11.4'
 3. Add camerax dependency (if you need the camera pipeline)
     1. implementation "androidx.camera:camera-core:$androidXCameraVersion"
     2. implementation "androidx.camera:camera-camera2:$androidXCameraVersion"
