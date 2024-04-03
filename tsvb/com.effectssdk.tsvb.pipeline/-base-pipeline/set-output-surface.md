@@ -7,7 +7,9 @@ abstract fun [setOutputSurface](set-output-surface.md)(surface: [Surface](https:
 
 Set surface for frame rendering. Pass null to remove surface.
 
-If SurfaceView used, ensure that holder.isCreating() value is false.
+WARNING!
+
+If you use SurfaceView object for frame preview, you should ensure that holder.isCreating() value is false before surface will be attached to your pipeline. The application could be locked on some devices if this value is true. 
 
 #### Parameters
 
