@@ -3,8 +3,7 @@
 # enableBeautification
 
 [androidJvm]\
-abstract fun [enableBeautification](enable-beautification.md)(
-enable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+abstract fun [enableBeautification](enable-beautification.md)(enable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
 Enable\disable beautification mode.
 
@@ -14,6 +13,6 @@ This option allow to hide skin defects.
 
 androidJvm
 
-|        |                                                   |
-|--------|---------------------------------------------------|
+| | |
+|---|---|
 | enable | -     set true if beautification option required. |

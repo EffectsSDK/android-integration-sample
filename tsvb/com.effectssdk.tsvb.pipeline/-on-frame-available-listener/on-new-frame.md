@@ -11,6 +11,6 @@ This method will be called for each pipeline frame
 
 androidJvm
 
-|        |                    |
-|--------|--------------------|
+| | |
+|---|---|
 | bitmap | -     output image |

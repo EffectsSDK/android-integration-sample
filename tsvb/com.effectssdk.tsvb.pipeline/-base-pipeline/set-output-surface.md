@@ -3,15 +3,16 @@
 # setOutputSurface
 
 [androidJvm]\
-abstract fun [setOutputSurface](set-output-surface.md)(
-surface: [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html)?)
+abstract fun [setOutputSurface](set-output-surface.md)(surface: [Surface](https://developer.android.com/reference/kotlin/android/view/Surface.html)?)
 
 Set surface for frame rendering. Pass null to remove surface.
+
+If SurfaceView used, ensure that holder.isCreating() value is false.
 
 #### Parameters
 
 androidJvm
 
-|         |
-|---------|
+| |
+|---|
 | surface |

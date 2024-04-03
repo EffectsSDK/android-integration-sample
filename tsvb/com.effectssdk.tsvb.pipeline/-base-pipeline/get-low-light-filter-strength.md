@@ -3,8 +3,7 @@
 # getLowLightFilterStrength
 
 [androidJvm]\
-abstract
-fun [getLowLightFilterStrength](get-low-light-filter-strength.md)(): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)
+abstract fun [getLowLightFilterStrength](get-low-light-filter-strength.md)(): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)
 
 Return current low light filter strength
 

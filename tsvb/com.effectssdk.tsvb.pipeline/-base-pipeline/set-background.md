@@ -3,8 +3,7 @@
 # setBackground
 
 [androidJvm]\
-abstract fun [setBackground](set-background.md)(
-bitmap: [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html))
+abstract fun [setBackground](set-background.md)(bitmap: [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html))
 
 Set background image for background replace option.
 
@@ -14,6 +13,6 @@ Background image will be resized if actual frame size is different. Works only i
 
 androidJvm
 
-|        |                            |
-|--------|----------------------------|
+| | |
+|---|---|
 | bitmap | -     new background image |

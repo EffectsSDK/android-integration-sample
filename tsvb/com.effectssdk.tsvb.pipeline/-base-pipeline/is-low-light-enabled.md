@@ -3,8 +3,7 @@
 # isLowLightEnabled
 
 [androidJvm]\
-abstract
-fun [isLowLightEnabled](is-low-light-enabled.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+abstract fun [isLowLightEnabled](is-low-light-enabled.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
 Return low light option status
 

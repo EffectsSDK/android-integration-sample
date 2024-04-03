@@ -3,8 +3,7 @@
 # setLowLightFilterStrength
 
 [androidJvm]\
-abstract fun [setLowLightFilterStrength](set-low-light-filter-strength.md)(
-strength: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html))
+abstract fun [setLowLightFilterStrength](set-low-light-filter-strength.md)(strength: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html))
 
 Set low light filter strength.
 
@@ -14,6 +13,6 @@ Works only if low light options enabled. See [enableLowLight](enable-low-light.m
 
 androidJvm
 
-|          |                                        |
-|----------|----------------------------------------|
+| | |
+|---|---|
 | strength | -     filter strength. Must be in 0..1 |

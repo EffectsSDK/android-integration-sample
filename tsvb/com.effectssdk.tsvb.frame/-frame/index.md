@@ -11,8 +11,8 @@ interface [~~Frame~~](index.md)---
 
 ## Functions
 
-| Name                           | Summary                                                                                                                        |
-|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [frameFormat](frame-format.md) | [androidJvm]<br>abstract fun [frameFormat](frame-format.md)(): [ImageFormat](../-image-format/index.md)                        |
-| [height](height.md)            | [androidJvm]<br>abstract fun [height](height.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
-| [width](width.md)              | [androidJvm]<br>abstract fun [width](width.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   |
+| Name | Summary |
+|---|---|
+| [frameFormat](frame-format.md) | [androidJvm]<br>abstract fun [frameFormat](frame-format.md)(): [ImageFormat](../-image-format/index.md) |
+| [height](height.md) | [androidJvm]<br>abstract fun [height](height.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [width](width.md) | [androidJvm]<br>abstract fun [width](width.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |

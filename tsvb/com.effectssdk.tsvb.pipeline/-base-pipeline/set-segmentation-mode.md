@@ -13,6 +13,6 @@ See available options in [SegmentationMode](../-segmentation-mode/index.md).
 
 androidJvm
 
-|      |                             |
-|------|-----------------------------|
+| | |
+|---|---|
 | mode | -     new segmentation mode |

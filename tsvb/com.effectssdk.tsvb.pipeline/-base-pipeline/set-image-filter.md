@@ -13,6 +13,6 @@ Works only if color correction set as PRESET_MODE. See [setColorCorrectionMode](
 
 androidJvm
 
-|        |                        |
-|--------|------------------------|
+| | |
+|---|---|
 | filter | -     new color filter |

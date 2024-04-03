@@ -3,8 +3,7 @@
 # setColorFilterStrength
 
 [androidJvm]\
-abstract fun [setColorFilterStrength](set-color-filter-strength.md)(
-strength: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html))
+abstract fun [setColorFilterStrength](set-color-filter-strength.md)(strength: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html))
 
 Set color filter strength.
 
@@ -14,6 +13,6 @@ Works only if color correction options enabled. See [setColorCorrectionMode](set
 
 androidJvm
 
-|          |                                        |
-|----------|----------------------------------------|
+| | |
+|---|---|
 | strength | -     filter strength. Must be in 0..1 |

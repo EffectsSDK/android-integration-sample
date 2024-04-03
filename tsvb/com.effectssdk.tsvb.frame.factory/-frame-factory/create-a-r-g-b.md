@@ -3,8 +3,7 @@
 # createARGB
 
 [androidJvm]\
-abstract fun [~~createARGB~~](create-a-r-g-b.md)(
-bitmap: [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html)): [Frame](../../com.effectssdk.tsvb.frame/-frame/index.md)
+abstract fun [~~createARGB~~](create-a-r-g-b.md)(bitmap: [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html)): [Frame](../../com.effectssdk.tsvb.frame/-frame/index.md)
 
 ---
 
@@ -24,6 +23,6 @@ frame for sdk usage
 
 androidJvm
 
-|        |             |
-|--------|-------------|
+| | |
+|---|---|
 | bitmap | input image |

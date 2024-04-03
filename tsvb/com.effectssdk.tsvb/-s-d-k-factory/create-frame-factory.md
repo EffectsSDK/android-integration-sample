@@ -3,8 +3,7 @@
 # createFrameFactory
 
 [androidJvm]\
-abstract fun [~~
-createFrameFactory~~](create-frame-factory.md)(): [FrameFactory](../../com.effectssdk.tsvb.frame.factory/-frame-factory/index.md)
+abstract fun [~~createFrameFactory~~](create-frame-factory.md)(): [FrameFactory](../../com.effectssdk.tsvb.frame.factory/-frame-factory/index.md)
 
 ---
 
@@ -14,8 +13,7 @@ Use [ImagePipeline.process()] directly.
 
 ---
 
-Create factory for sdk frame generation. Pass this frames
-to [ImagePipeline.process](../../com.effectssdk.tsvb.pipeline/-image-pipeline/process.md) method.
+Create factory for sdk frame generation. Pass this frames to [ImagePipeline.process](../../com.effectssdk.tsvb.pipeline/-image-pipeline/process.md) method.
 
 #### Return
 

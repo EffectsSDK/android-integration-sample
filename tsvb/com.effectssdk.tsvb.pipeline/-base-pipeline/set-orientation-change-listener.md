@@ -3,8 +3,7 @@
 # setOrientationChangeListener
 
 [androidJvm]\
-abstract fun [setOrientationChangeListener](set-orientation-change-listener.md)(
-listener: [OrientationChangeListener](../-orientation-change-listener/index.md)?)
+abstract fun [setOrientationChangeListener](set-orientation-change-listener.md)(listener: [OrientationChangeListener](../-orientation-change-listener/index.md)?)
 
 Attach orientationChangeListener to pipeline.
 
@@ -14,6 +13,6 @@ Set this listener if you need to process orientation changes.
 
 androidJvm
 
-|          |                                                                                       |
-|----------|---------------------------------------------------------------------------------------|
+| | |
+|---|---|
 | listener | -     [OrientationChangeListener](../-orientation-change-listener/index.md) instance. |

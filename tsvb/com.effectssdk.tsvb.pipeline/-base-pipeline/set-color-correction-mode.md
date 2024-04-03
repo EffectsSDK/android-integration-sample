@@ -13,6 +13,6 @@ Available options see in [ColorCorrectionMode](../-color-correction-mode/index.m
 
 androidJvm
 
-|      |                             |
-|------|-----------------------------|
+| | |
+|---|---|
 | mode | -     color correction mode |

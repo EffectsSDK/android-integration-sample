@@ -11,6 +11,6 @@ Initialize Effects SDK.
 
 androidJvm
 
-|         |                             |
-|---------|-----------------------------|
+| | |
+|---|---|
 | context | current application context |

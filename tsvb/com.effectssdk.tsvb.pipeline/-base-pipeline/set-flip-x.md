@@ -11,6 +11,6 @@ Set [horizontalFlip](set-flip-x.md) as true if you need flip image by x axis.
 
 androidJvm
 
-|                |
-|----------------|
+| |
+|---|
 | horizontalFlip |

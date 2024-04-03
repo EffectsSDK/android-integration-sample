@@ -13,6 +13,6 @@ Select one of resolutions supported by device camera.
 
 androidJvm
 
-|            |                       |
-|------------|-----------------------|
+| | |
+|---|---|
 | resolution | -     new resolution. |

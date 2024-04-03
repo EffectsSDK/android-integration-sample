@@ -24,6 +24,6 @@ Pass frame to image and process it.
 
 androidJvm
 
-|       |                 |
-|-------|-----------------|
+| | |
+|---|---|
 | frame | -     new image |

@@ -3,8 +3,7 @@
 # enableLowLight
 
 [androidJvm]\
-abstract fun [enableLowLight](enable-low-light.md)(
-enable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+abstract fun [enableLowLight](enable-low-light.md)(enable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
 Enable\disable low light mode.
 
@@ -14,6 +13,6 @@ This option allow to improve image details in dark.
 
 androidJvm
 
-|        |                                              |
-|--------|----------------------------------------------|
+| | |
+|---|---|
 | enable | -     set true if low light option required. |

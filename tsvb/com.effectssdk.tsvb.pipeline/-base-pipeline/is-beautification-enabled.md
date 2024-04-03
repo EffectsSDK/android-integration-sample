@@ -3,8 +3,7 @@
 # isBeautificationEnabled
 
 [androidJvm]\
-abstract
-fun [isBeautificationEnabled](is-beautification-enabled.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+abstract fun [isBeautificationEnabled](is-beautification-enabled.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
 Return beautification option status.
 

@@ -13,6 +13,6 @@ Available options see in [PipelineMode](../-pipeline-mode/index.md)
 
 androidJvm
 
-|      |                       |
-|------|-----------------------|
+| | |
+|---|---|
 | mode | -     background mode |
