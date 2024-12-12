@@ -3,7 +3,7 @@
 # setColorCorrectionMode
 
 [androidJvm]\
-abstract fun [setColorCorrectionMode](set-color-correction-mode.md)(mode: [ColorCorrectionMode](../-color-correction-mode/index.md))
+open fun [setColorCorrectionMode](set-color-correction-mode.md)(mode: [ColorCorrectionMode](../-color-correction-mode/index.md))
 
 Set color correction mode.
 

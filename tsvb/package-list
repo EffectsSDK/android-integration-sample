@@ -25,7 +25,6 @@ $dokka.location:com.effectssdk.tsvb.models/CubeImageFilter/hashCode/#/PointingTo
 $dokka.location:com.effectssdk.tsvb.pipeline////PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/index.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline///PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/index.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/enableBeautification/#kotlin.Boolean/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/enable-beautification.md
-$dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/enableLowLight/#kotlin.Boolean/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/enable-low-light.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/enableSharpening/#kotlin.Boolean/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/enable-sharpening.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getBlurPower/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/get-blur-power.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getColorCorrectionMode/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/get-color-correction-mode.md
@@ -33,7 +32,6 @@ $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getColorFilterStrength
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getFaceDetectionGap/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/get-face-detection-gap.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getForegroundSize/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/get-foreground-size.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getImageFilter/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/get-image-filter.md
-$dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getLowLightFilterStrength/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/get-low-light-filter-strength.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getMode/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/get-mode.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getSegmentationGap/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/get-segmentation-gap.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getSegmentationMode/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/get-segmentation-mode.md
@@ -41,7 +39,6 @@ $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getSharpeningStrength/
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/getZoomLevel/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/get-zoom-level.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/isBeautificationEnabled/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/is-beautification-enabled.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/isFlippedX/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/is-flipped-x.md
-$dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/isLowLightEnabled/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/is-low-light-enabled.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/release/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/release.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/setBackground/#android.graphics.Bitmap/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/set-background.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/setBeautificationPower/#kotlin.Int/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/set-beautification-power.md
@@ -53,7 +50,6 @@ $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/setFaceDetectionGap/#k
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/setFlipX/#kotlin.Boolean/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/set-flip-x.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/setForegroundSize/#kotlin.Float/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/set-foreground-size.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/setImageFilter/#com.effectssdk.tsvb.models.CubeImageFilter/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/set-image-filter.md
-$dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/setLowLightFilterStrength/#kotlin.Float/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/set-low-light-filter-strength.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/setMode/#com.effectssdk.tsvb.pipeline.PipelineMode/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/set-mode.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/setOnFrameAvailableListener/#com.effectssdk.tsvb.pipeline.OnFrameAvailableListener?/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/set-on-frame-available-listener.md
 $dokka.location:com.effectssdk.tsvb.pipeline/BasePipeline/setOrientationChangeListener/#com.effectssdk.tsvb.pipeline.OrientationChangeListener?/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-base-pipeline/set-orientation-change-listener.md
@@ -68,6 +64,7 @@ $dokka.location:com.effectssdk.tsvb.pipeline/CameraPipeline/setResolution/#andro
 $dokka.location:com.effectssdk.tsvb.pipeline/CameraPipeline/startPipeline/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-camera-pipeline/start-pipeline.md
 $dokka.location:com.effectssdk.tsvb.pipeline/ColorCorrectionMode.COLOR_CORRECTION_MODE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}tsvb/com.effectssdk.tsvb.pipeline/-color-correction-mode/-c-o-l-o-r_-c-o-r-r-e-c-t-i-o-n_-m-o-d-e/index.md
 $dokka.location:com.effectssdk.tsvb.pipeline/ColorCorrectionMode.COLOR_GRADING_MODE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}tsvb/com.effectssdk.tsvb.pipeline/-color-correction-mode/-c-o-l-o-r_-g-r-a-d-i-n-g_-m-o-d-e/index.md
+$dokka.location:com.effectssdk.tsvb.pipeline/ColorCorrectionMode.LOW_LIGHT_MODE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}tsvb/com.effectssdk.tsvb.pipeline/-color-correction-mode/-l-o-w_-l-i-g-h-t_-m-o-d-e/index.md
 $dokka.location:com.effectssdk.tsvb.pipeline/ColorCorrectionMode.NO_FILTER_MODE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}tsvb/com.effectssdk.tsvb.pipeline/-color-correction-mode/-n-o_-f-i-l-t-e-r_-m-o-d-e/index.md
 $dokka.location:com.effectssdk.tsvb.pipeline/ColorCorrectionMode.PRESET_MODE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}tsvb/com.effectssdk.tsvb.pipeline/-color-correction-mode/-p-r-e-s-e-t_-m-o-d-e/index.md
 $dokka.location:com.effectssdk.tsvb.pipeline/ColorCorrectionMode///PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-color-correction-mode/index.md
@@ -83,11 +80,13 @@ $dokka.location:com.effectssdk.tsvb.pipeline/DeviceOrientation/entries/#/Pointin
 $dokka.location:com.effectssdk.tsvb.pipeline/DeviceOrientation/valueOf/#kotlin.String/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-device-orientation/value-of.md
 $dokka.location:com.effectssdk.tsvb.pipeline/DeviceOrientation/values/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-device-orientation/values.md
 $dokka.location:com.effectssdk.tsvb.pipeline/ImagePipeline///PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-image-pipeline/index.md
+$dokka.location:com.effectssdk.tsvb.pipeline/ImagePipeline/process/#android.graphics.Bitmap#kotlin.Long/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-image-pipeline/process.md
 $dokka.location:com.effectssdk.tsvb.pipeline/ImagePipeline/process/#android.graphics.Bitmap/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-image-pipeline/process.md
+$dokka.location:com.effectssdk.tsvb.pipeline/ImagePipeline/process/#android.media.Image#kotlin.Long/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-image-pipeline/process.md
 $dokka.location:com.effectssdk.tsvb.pipeline/ImagePipeline/process/#android.media.Image/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-image-pipeline/process.md
 $dokka.location:com.effectssdk.tsvb.pipeline/ImagePipeline/process/#com.effectssdk.tsvb.frame.Frame/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-image-pipeline/process.md
 $dokka.location:com.effectssdk.tsvb.pipeline/OnFrameAvailableListener///PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-on-frame-available-listener/index.md
-$dokka.location:com.effectssdk.tsvb.pipeline/OnFrameAvailableListener/onNewFrame/#android.graphics.Bitmap/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-on-frame-available-listener/on-new-frame.md
+$dokka.location:com.effectssdk.tsvb.pipeline/OnFrameAvailableListener/onNewFrame/#android.graphics.Bitmap#kotlin.Long/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-on-frame-available-listener/on-new-frame.md
 $dokka.location:com.effectssdk.tsvb.pipeline/OrientationChangeListener///PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-orientation-change-listener/index.md
 $dokka.location:com.effectssdk.tsvb.pipeline/OrientationChangeListener/onOrientationChanged/#com.effectssdk.tsvb.pipeline.DeviceOrientation#kotlin.Int/PointingToDeclaration/tsvb/com.effectssdk.tsvb.pipeline/-orientation-change-listener/on-orientation-changed.md
 $dokka.location:com.effectssdk.tsvb.pipeline/PipelineMode.BLUR///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}tsvb/com.effectssdk.tsvb.pipeline/-pipeline-mode/-b-l-u-r/index.md
@@ -116,8 +115,17 @@ $dokka.location:com.effectssdk.tsvb/Camera/values/#/PointingToDeclaration/tsvb/
 $dokka.location:com.effectssdk.tsvb/EffectsSDK///PointingToDeclaration/tsvb/com.effectssdk.tsvb/-effects-s-d-k/index.md
 $dokka.location:com.effectssdk.tsvb/EffectsSDK/createSDKFactory/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-effects-s-d-k/create-s-d-k-factory.md
 $dokka.location:com.effectssdk.tsvb/EffectsSDK/getCameraResolution/#android.content.Context#com.effectssdk.tsvb.Camera/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-effects-s-d-k/get-camera-resolution.md
+$dokka.location:com.effectssdk.tsvb/EffectsSDK/getSdkStatus/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-effects-s-d-k/get-sdk-status.md
 $dokka.location:com.effectssdk.tsvb/EffectsSDK/getVersionName/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-effects-s-d-k/get-version-name.md
-$dokka.location:com.effectssdk.tsvb/EffectsSDK/initialize/#android.content.Context/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-effects-s-d-k/initialize.md
+$dokka.location:com.effectssdk.tsvb/EffectsSDK/initialize/#android.content.Context#kotlin.String#java.net.URL?#kotlin.Function1[com.effectssdk.tsvb.EffectsSDKStatus,kotlin.Unit]/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-effects-s-d-k/initialize.md
+$dokka.location:com.effectssdk.tsvb/EffectsSDKStatus.ACTIVE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}tsvb/com.effectssdk.tsvb/-effects-s-d-k-status/-a-c-t-i-v-e/index.md
+$dokka.location:com.effectssdk.tsvb/EffectsSDKStatus.EXPIRED///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}tsvb/com.effectssdk.tsvb/-effects-s-d-k-status/-e-x-p-i-r-e-d/index.md
+$dokka.location:com.effectssdk.tsvb/EffectsSDKStatus.INACTIVE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}tsvb/com.effectssdk.tsvb/-effects-s-d-k-status/-i-n-a-c-t-i-v-e/index.md
+$dokka.location:com.effectssdk.tsvb/EffectsSDKStatus.UNAVAILABLE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}tsvb/com.effectssdk.tsvb/-effects-s-d-k-status/-u-n-a-v-a-i-l-a-b-l-e/index.md
+$dokka.location:com.effectssdk.tsvb/EffectsSDKStatus///PointingToDeclaration/tsvb/com.effectssdk.tsvb/-effects-s-d-k-status/index.md
+$dokka.location:com.effectssdk.tsvb/EffectsSDKStatus/entries/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-effects-s-d-k-status/entries.md
+$dokka.location:com.effectssdk.tsvb/EffectsSDKStatus/valueOf/#kotlin.String/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-effects-s-d-k-status/value-of.md
+$dokka.location:com.effectssdk.tsvb/EffectsSDKStatus/values/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-effects-s-d-k-status/values.md
 $dokka.location:com.effectssdk.tsvb/FPSListener///PointingToDeclaration/tsvb/com.effectssdk.tsvb/-f-p-s-listener/index.md
 $dokka.location:com.effectssdk.tsvb/FPSListener/onFPSChanged/#kotlin.Int/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-f-p-s-listener/on-f-p-s-changed.md
 $dokka.location:com.effectssdk.tsvb/LutProvider.Companion///PointingToDeclaration/tsvb/com.effectssdk.tsvb/-lut-provider/-companion/index.md
@@ -125,9 +133,11 @@ $dokka.location:com.effectssdk.tsvb/LutProvider///PointingToDeclaration/tsvb/co
 $dokka.location:com.effectssdk.tsvb/LutProvider/LutProvider/#android.content.Context/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-lut-provider/-lut-provider.md
 $dokka.location:com.effectssdk.tsvb/LutProvider/loadCubeLut/#kotlin.String/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-lut-provider/load-cube-lut.md
 $dokka.location:com.effectssdk.tsvb/SDKFactory///PointingToDeclaration/tsvb/com.effectssdk.tsvb/-s-d-k-factory/index.md
-$dokka.location:com.effectssdk.tsvb/SDKFactory/createCameraPipeline/#android.content.Context#com.effectssdk.tsvb.pipeline.PipelineMode#com.effectssdk.tsvb.pipeline.SegmentationMode#com.effectssdk.tsvb.pipeline.ColorCorrectionMode#android.graphics.Bitmap#android.graphics.Bitmap#kotlin.Int#kotlin.Int#kotlin.Float#kotlin.Float#kotlin.Float#kotlin.Float#kotlin.Boolean#kotlin.Boolean#com.effectssdk.tsvb.FPSListener?#com.effectssdk.tsvb.pipeline.OrientationChangeListener?#android.util.Size#com.effectssdk.tsvb.Camera/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-s-d-k-factory/create-camera-pipeline.md
+$dokka.location:com.effectssdk.tsvb/SDKFactory/createCameraPipeline/#android.content.Context#com.effectssdk.tsvb.pipeline.PipelineMode#com.effectssdk.tsvb.pipeline.SegmentationMode#com.effectssdk.tsvb.pipeline.ColorCorrectionMode#android.graphics.Bitmap#android.graphics.Bitmap#kotlin.Int#kotlin.Int#kotlin.Float#kotlin.Float#kotlin.Float#kotlin.Boolean#com.effectssdk.tsvb.FPSListener?#com.effectssdk.tsvb.pipeline.OrientationChangeListener?#android.util.Size#com.effectssdk.tsvb.Camera/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-s-d-k-factory/create-camera-pipeline.md
 $dokka.location:com.effectssdk.tsvb/SDKFactory/createFrameFactory/#/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-s-d-k-factory/create-frame-factory.md
-$dokka.location:com.effectssdk.tsvb/SDKFactory/createImagePipeline/#android.content.Context#com.effectssdk.tsvb.pipeline.PipelineMode#com.effectssdk.tsvb.pipeline.SegmentationMode#com.effectssdk.tsvb.pipeline.ColorCorrectionMode#android.graphics.Bitmap#android.graphics.Bitmap#kotlin.Int#kotlin.Float#kotlin.Int#kotlin.Float#kotlin.Float#kotlin.Float#kotlin.Boolean#kotlin.Boolean#com.effectssdk.tsvb.FPSListener?#com.effectssdk.tsvb.pipeline.OrientationChangeListener?/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-s-d-k-factory/create-image-pipeline.md
+$dokka.location:com.effectssdk.tsvb/SDKFactory/createImagePipeline/#android.content.Context#com.effectssdk.tsvb.pipeline.PipelineMode#com.effectssdk.tsvb.pipeline.SegmentationMode#com.effectssdk.tsvb.pipeline.ColorCorrectionMode#android.graphics.Bitmap#android.graphics.Bitmap#kotlin.Int#kotlin.Float#kotlin.Int#kotlin.Float#kotlin.Float#kotlin.Boolean#com.effectssdk.tsvb.FPSListener?/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-s-d-k-factory/create-image-pipeline.md
+$dokka.location:com.effectssdk.tsvb/SDKFactory/createLiteCameraPipeline/#android.content.Context#com.effectssdk.tsvb.pipeline.PipelineMode#kotlin.Float#android.graphics.Bitmap#kotlin.Float#android.util.Size#com.effectssdk.tsvb.Camera#com.effectssdk.tsvb.pipeline.SegmentationMode#com.effectssdk.tsvb.pipeline.OrientationChangeListener?#com.effectssdk.tsvb.FPSListener?/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-s-d-k-factory/create-lite-camera-pipeline.md
+$dokka.location:com.effectssdk.tsvb/SDKFactory/createLiteImagePipeline/#android.content.Context#com.effectssdk.tsvb.pipeline.PipelineMode#com.effectssdk.tsvb.pipeline.SegmentationMode#android.graphics.Bitmap#kotlin.Float#kotlin.Float#com.effectssdk.tsvb.FPSListener?/PointingToDeclaration/tsvb/com.effectssdk.tsvb/-s-d-k-factory/create-lite-image-pipeline.md
 com.effectssdk.tsvb
 com.effectssdk.tsvb.frame
 com.effectssdk.tsvb.frame.factory

@@ -3,7 +3,7 @@
 # getFaceDetectionGap
 
 [androidJvm]\
-abstract fun [getFaceDetectionGap](get-face-detection-gap.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+open fun [getFaceDetectionGap](get-face-detection-gap.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
 Return current face detection gap.
 

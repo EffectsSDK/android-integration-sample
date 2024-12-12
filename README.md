@@ -22,7 +22,7 @@ appearance.
 Finally, our automatic color correction feature adjusts the camera's color settings to improve the overall image quality, even in low-light
 environments or with poor quality cameras.
 
-Overall, our web SDK is the perfect solution for those looking to take their video conferencing experience to the next level. With advanced
+Overall, our SDK is the perfect solution for those looking to take their video conferencing experience to the next level. With advanced
 features like background blur, virtual background, auto-framing or smart zoom, beautification, and automatic color correction, you can
 create a professional and polished appearance during your video calls. Try our web SDK today and elevate your video conferencing experience.
 
@@ -30,21 +30,26 @@ create a professional and polished appearance during your video calls. Try our w
 
 ## How to use
 
+### Obtaining Effects SDK Customer ID
+
+To receive a new trial Customer ID please fill in the contact form on effectssdk.ai website.
+
 ### Preparation
 
-1. Add this dependency to your gradle file
+1. Get your own customer ID
+2. Add this dependency to your gradle file
     1. implementation 'com.google.flogger:flogger:$version'
     2. implementation 'com.google.flogger:flogger-system-backend:$version'
     3. implementation 'com.google.guava:guava:$version'
-2. Optional:
+3. Optional:
     1. implementation 'com.google.code.findbugs:jsr305:3.0.2' 
-3. Add camerax dependency (if you need the camera pipeline)
+4. Add camerax dependency (if camera pipeline required)
     1. implementation "androidx.camera:camera-core:$androidXCameraVersion"
     2. implementation "androidx.camera:camera-camera2:$androidXCameraVersion"
     3. implementation "androidx.camera:camera-lifecycle:$androidXCameraVersion"
-4. Import AAR file by using android studio interface, or add it to your gradle script manually
-5. Call EffectsSDK.initialize(context) method in your Application class (or Activity class) to load native library
-6. Call EffectsSDK.createSDKFactory(context) to get SDKFactory instance
+5. Import AAR file by using android studio interface, or add it to your gradle script manually
+6. Call EffectsSDK.initialize(context, CUSTOMER_ID) method in your Application class (or Activity class) to load native library
+7. Call EffectsSDK.createSDKFactory(context) to get SDKFactory instance
 
 
 ### Usage
@@ -65,12 +70,18 @@ attach a Surface object to the pipeline. You still can use onFrameAvailableListe
 
 ```kotlin
 class YourApplicationClass : Application() {
-
-	override fun onCreate() {
-		super.onCreate()
-		EffectsSDK.initialize(applicationContext)
-	}
-
+    private val YOUR_CUSTOMER_ID = "customer_id"
+    override fun onCreate() { 
+        super.onCreate()
+        EffectsSDK.initialize(applicationContext, YOUR_CUSTOMER_ID) { sdkStatus -> 
+            when (sdkStatus) {
+                EffectsSDKStatus.ACTIVE -> TODO()
+                EffectsSDKStatus.INACTIVE -> TODO()
+                EffectsSDKStatus.EXPIRED -> TODO()
+                EffectsSDKStatus.UNAVAILABLE -> TODO()
+            }
+        }
+    }
 }
 ```
 
@@ -82,16 +93,28 @@ private val sdkFactory = EffectsSDK.createSDKFactory()
 
 private val pipeline = sdkFactory.createImagePipeline(
 	context = context,
-	mode = pipelineMode,
-	colorCorrectionMode,
-	background = backgroundImage,
+	mode = PipelineMode.BLUR,
 	blurPower = blurPower,
 	// Additional parameters
 )
 
-pipeline.setOnFrameAvailableListener { bitmap ->
+pipeline.setOnFrameAvailableListener { bitmap, timestamp ->
 	//handle pipeline output here
 }
+```
+
+
+#### Lite pipelines
+
+If you need only basic functions (like remove\replace\blur background), you can use lite pipeline instances.
+```kotlin
+
+private val sdkFactory = EffectsSDK.createSDKFactory()
+
+private val pipeline = sdkFactory.createLiteCameraPipeline(
+	context,
+	PipelineMode.REMOVE
+)
 ```
 
 ### Color filter example
@@ -113,53 +136,31 @@ pipeline.setOnFrameAvailableListener { bitmap ->
 | CS 18                                         | CS 19                                        | CS 20                                        |
 | ![alt text](assets/CS_18.jpg "CS 1 example")  | ![alt text](assets/CS_19.jpg "CS 1 example") | ![alt text](assets/CS_20.jpg "CS 1 example") |
 
-## Migration from 2.6.x to 2.7.x
 
-### Use createPipeline methods from EffectsSdkFactory()
 
-Version 2.6.x
+## Migration to 2.11.x
+
+### Add customer id to your SDK initialize() call
 
 ```kotlin
-private val sdkFactory = EffectsSDK.createSDKFactory()
-private val pipeline = sdkFactory.createImagePipelineBuilder()
-	.setContext(context)
-	//pipeline options
-	.build()
+EffectsSDK.initialize(context, YOUR_CUSTOMER_ID) { status ->
+   when (status) {
+      EffectsSDKStatus.ACTIVE -> TODO()
+      EffectsSDKStatus.INACTIVE -> TODO()
+      EffectsSDKStatus.EXPIRED -> TODO()
+      EffectsSDKStatus.UNAVAILABLE -> TODO()
+   }
+}
 ```
 
-Version 2.7.x
+### Add internet permission
+```manifest
+<manifest
 
-```kotlin
-private val sdkFactory = EffectsSDK.createSDKFactory()
-private val pipeline = sdkFactory.createImagePipeline(
-	context = appContext,
-	//pipeline options
-)
-```
+ <uses-permission android:name = "android.permission.INTERNET" />
+ <uses-permission android:name = "android.permission.CAMERA" />
+ ...
+</manifest>
 
-### Pass images to ImagePipeline directly
 
-Version 2.6.x
-
-```kotlin
-private val sdkFactory = EffectsSDK.createSDKFactory()
-private val frameFactory = sdkFactory.createFrameFactory()
-
-private val pipeline = sdkFactory.createImagePipeline(
-	//options
-)
-
-pipeline.process(frameFactory.createARGB(bitmap))
-```
-
-Version 2.7.x
-
-```kotlin
-private val sdkFactory = EffectsSDK.createSDKFactory()
-
-private val pipeline = sdkFactory.createImagePipeline(
-	//options
-)
-
-pipeline.process(bitmap)
 ```

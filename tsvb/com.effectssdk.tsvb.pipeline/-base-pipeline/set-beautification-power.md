@@ -3,7 +3,7 @@
 # setBeautificationPower
 
 [androidJvm]\
-abstract fun [setBeautificationPower](set-beautification-power.md)(power: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+open fun [setBeautificationPower](set-beautification-power.md)(power: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
 Set power for beautification filter. A higher value reduces performance.
 

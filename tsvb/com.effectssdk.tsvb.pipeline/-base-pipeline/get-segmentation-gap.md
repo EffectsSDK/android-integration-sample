@@ -3,7 +3,7 @@
 # getSegmentationGap
 
 [androidJvm]\
-abstract fun [getSegmentationGap](get-segmentation-gap.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+open fun [getSegmentationGap](get-segmentation-gap.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
 Return current segmentation gap.
 

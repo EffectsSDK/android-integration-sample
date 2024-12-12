@@ -3,7 +3,7 @@
 # getImageFilter
 
 [androidJvm]\
-abstract fun [getImageFilter](get-image-filter.md)(): [CubeImageFilter](../../com.effectssdk.tsvb.models/-cube-image-filter/index.md)
+open fun [getImageFilter](get-image-filter.md)(): [CubeImageFilter](../../com.effectssdk.tsvb.models/-cube-image-filter/index.md)
 
 Return current cube filter
 

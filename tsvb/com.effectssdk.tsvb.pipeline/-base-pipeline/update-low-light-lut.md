@@ -3,8 +3,8 @@
 # updateLowLightLut
 
 [androidJvm]\
-abstract fun [updateLowLightLut](update-low-light-lut.md)()
+open fun [updateLowLightLut](update-low-light-lut.md)()
 
 Force low light lut update.
 
-Works only if low light mode is enabled. See [enableLowLight](enable-low-light.md).
+Works only if low light mode is enabled. See enableLowLight.

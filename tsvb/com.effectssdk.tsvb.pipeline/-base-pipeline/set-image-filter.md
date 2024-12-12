@@ -3,7 +3,7 @@
 # setImageFilter
 
 [androidJvm]\
-abstract fun [setImageFilter](set-image-filter.md)(filter: [CubeImageFilter](../../com.effectssdk.tsvb.models/-cube-image-filter/index.md))
+open fun [setImageFilter](set-image-filter.md)(filter: [CubeImageFilter](../../com.effectssdk.tsvb.models/-cube-image-filter/index.md))
 
 Set custom cube image filter.
 

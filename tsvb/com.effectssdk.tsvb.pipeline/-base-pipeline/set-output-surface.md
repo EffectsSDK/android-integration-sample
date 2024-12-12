@@ -9,7 +9,7 @@ Set surface for frame rendering. Pass null to remove surface.
 
 WARNING!
 
-If you use SurfaceView object for frame preview, you should ensure that holder.isCreating() value is false before surface will be attached to your pipeline. The application could be locked on some devices if this value is true. 
+If you use SurfaceView object for frame preview, you should ensure that holder.isCreating() value is false before surface will be attached to pipeline. The application could be locked on some devices, if this value is true.
 
 #### Parameters
 

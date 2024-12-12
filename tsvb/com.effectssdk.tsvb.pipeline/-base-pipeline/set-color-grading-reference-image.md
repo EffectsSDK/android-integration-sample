@@ -3,7 +3,7 @@
 # setColorGradingReferenceImage
 
 [androidJvm]\
-abstract fun [setColorGradingReferenceImage](set-color-grading-reference-image.md)(bitmap: [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html))
+open fun [setColorGradingReferenceImage](set-color-grading-reference-image.md)(bitmap: [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html))
 
 Set color grading reference image.
 

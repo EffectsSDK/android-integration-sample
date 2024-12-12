@@ -3,7 +3,7 @@
 # getColorCorrectionMode
 
 [androidJvm]\
-abstract fun [getColorCorrectionMode](get-color-correction-mode.md)(): [ColorCorrectionMode](../-color-correction-mode/index.md)
+open fun [getColorCorrectionMode](get-color-correction-mode.md)(): [ColorCorrectionMode](../-color-correction-mode/index.md)
 
 Return current color correction mode.
 

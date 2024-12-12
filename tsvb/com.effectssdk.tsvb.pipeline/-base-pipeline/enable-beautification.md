@@ -3,7 +3,7 @@
 # enableBeautification
 
 [androidJvm]\
-abstract fun [enableBeautification](enable-beautification.md)(enable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+open fun [enableBeautification](enable-beautification.md)(enable: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
 Enable\disable beautification mode.
 

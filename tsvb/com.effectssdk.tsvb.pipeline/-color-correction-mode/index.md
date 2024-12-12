@@ -7,7 +7,7 @@ enum [ColorCorrectionMode](index.md) : [Enum](https://kotlinlang.org/api/latest/
 
 Available options for color correction.
 
-[NO_FILTER_MODE](-n-o_-f-i-l-t-e-r_-m-o-d-e/index.md) - disable color correction. [COLOR_CORRECTION_MODE](-c-o-l-o-r_-c-o-r-r-e-c-t-i-o-n_-m-o-d-e/index.md) - improve colors by our neural network. [COLOR_GRADING_MODE](-c-o-l-o-r_-g-r-a-d-i-n-g_-m-o-d-e/index.md) - change colors by reference image. [PRESET_MODE](-p-r-e-s-e-t_-m-o-d-e/index.md) - change colors according to you filters.
+[NO_FILTER_MODE](-n-o_-f-i-l-t-e-r_-m-o-d-e/index.md) - disable color correction. [COLOR_CORRECTION_MODE](-c-o-l-o-r_-c-o-r-r-e-c-t-i-o-n_-m-o-d-e/index.md) - improve colors by our neural network. [COLOR_GRADING_MODE](-c-o-l-o-r_-g-r-a-d-i-n-g_-m-o-d-e/index.md) - change colors by reference image. [PRESET_MODE](-p-r-e-s-e-t_-m-o-d-e/index.md) - change colors according to you filters. [LOW_LIGHT_MODE](-l-o-w_-l-i-g-h-t_-m-o-d-e/index.md) - make the image lighter in low light.
 
 ## Entries
 
@@ -17,6 +17,7 @@ Available options for color correction.
 | [COLOR_CORRECTION_MODE](-c-o-l-o-r_-c-o-r-r-e-c-t-i-o-n_-m-o-d-e/index.md) | [androidJvm]<br>[COLOR_CORRECTION_MODE](-c-o-l-o-r_-c-o-r-r-e-c-t-i-o-n_-m-o-d-e/index.md) |
 | [COLOR_GRADING_MODE](-c-o-l-o-r_-g-r-a-d-i-n-g_-m-o-d-e/index.md) | [androidJvm]<br>[COLOR_GRADING_MODE](-c-o-l-o-r_-g-r-a-d-i-n-g_-m-o-d-e/index.md) |
 | [PRESET_MODE](-p-r-e-s-e-t_-m-o-d-e/index.md) | [androidJvm]<br>[PRESET_MODE](-p-r-e-s-e-t_-m-o-d-e/index.md) |
+| [LOW_LIGHT_MODE](-l-o-w_-l-i-g-h-t_-m-o-d-e/index.md) | [androidJvm]<br>[LOW_LIGHT_MODE](-l-o-w_-l-i-g-h-t_-m-o-d-e/index.md) |
 
 ## Properties
 
