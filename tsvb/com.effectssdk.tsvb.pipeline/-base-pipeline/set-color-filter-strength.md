@@ -3,7 +3,7 @@
 # setColorFilterStrength
 
 [androidJvm]\
-open fun [setColorFilterStrength](set-color-filter-strength.md)(strength: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html))
+open fun [setColorFilterStrength](set-color-filter-strength.md)(strength: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html))
 
 Set color filter strength.
 

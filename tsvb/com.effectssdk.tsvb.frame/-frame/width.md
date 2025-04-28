@@ -3,4 +3,4 @@
 # width
 
 [androidJvm]\
-abstract fun [width](width.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+abstract fun [width](width.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html)

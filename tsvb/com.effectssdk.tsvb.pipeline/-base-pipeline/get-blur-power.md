@@ -3,7 +3,7 @@
 # getBlurPower
 
 [androidJvm]\
-abstract fun [getBlurPower](get-blur-power.md)(): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)
+abstract fun [getBlurPower](get-blur-power.md)(): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html)
 
 Return current blur power.
 

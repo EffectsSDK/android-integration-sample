@@ -3,7 +3,7 @@
 # getColorFilterStrength
 
 [androidJvm]\
-open fun [getColorFilterStrength](get-color-filter-strength.md)(): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)
+open fun [getColorFilterStrength](get-color-filter-strength.md)(): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html)
 
 Return current color correction filter strength
 

@@ -3,7 +3,7 @@
 # setBlurPower
 
 [androidJvm]\
-abstract fun [setBlurPower](set-blur-power.md)(power: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html))
+abstract fun [setBlurPower](set-blur-power.md)(power: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html))
 
 Set blur power for pipeline. A higher value reduces performance. Works only with [PipelineMode.BLUR](../-pipeline-mode/-b-l-u-r/index.md) mode
 

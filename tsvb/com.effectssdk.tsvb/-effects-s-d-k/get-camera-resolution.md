@@ -3,7 +3,7 @@
 # getCameraResolution
 
 [androidJvm]\
-fun [getCameraResolution](get-camera-resolution.md)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), camera: [Camera](../-camera/index.md)): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Size](https://developer.android.com/reference/kotlin/android/util/Size.html)&gt;
+fun [getCameraResolution](get-camera-resolution.md)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), camera: [Camera](../-camera/index.md)): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html)&lt;[Size](https://developer.android.com/reference/kotlin/android/util/Size.html)&gt;
 
 Return available resolutions for selected camera
 

@@ -3,7 +3,7 @@
 # setSharpeningStrength
 
 [androidJvm]\
-open fun [setSharpeningStrength](set-sharpening-strength.md)(strength: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html))
+open fun [setSharpeningStrength](set-sharpening-strength.md)(strength: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html))
 
 Set sharpening strength.
 

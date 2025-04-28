@@ -3,7 +3,7 @@
 # getForegroundSize
 
 [androidJvm]\
-abstract fun [getForegroundSize](get-foreground-size.md)(): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)
+abstract fun [getForegroundSize](get-foreground-size.md)(): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html)
 
 Return current segmentation padding size.
 

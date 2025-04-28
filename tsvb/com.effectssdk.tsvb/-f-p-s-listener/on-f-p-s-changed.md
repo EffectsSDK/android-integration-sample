@@ -3,7 +3,7 @@
 # onFPSChanged
 
 [androidJvm]\
-abstract fun [onFPSChanged](on-f-p-s-changed.md)(framesPerSecond: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+abstract fun [onFPSChanged](on-f-p-s-changed.md)(framesPerSecond: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html))
 
 Every second update current fps value.
 

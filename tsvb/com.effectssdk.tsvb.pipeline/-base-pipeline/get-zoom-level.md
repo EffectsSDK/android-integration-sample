@@ -3,7 +3,7 @@
 # getZoomLevel
 
 [androidJvm]\
-open fun [getZoomLevel](get-zoom-level.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+open fun [getZoomLevel](get-zoom-level.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html)
 
 Return current zoom level.
 

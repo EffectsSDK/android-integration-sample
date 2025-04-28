@@ -3,4 +3,4 @@
 # filterSize
 
 [androidJvm]\
-val [filterSize](filter-size.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0
+val [filterSize](filter-size.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html) = 0

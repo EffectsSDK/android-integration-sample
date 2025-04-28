@@ -21,4 +21,4 @@ class [LutProvider](index.md)(context: [Context](https://developer.android.com/r
 
 | Name | Summary |
 |---|---|
-| [loadCubeLut](load-cube-lut.md) | [androidJvm]<br>fun [loadCubeLut](load-cube-lut.md)(assetPath: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [CubeImageFilter](../../com.effectssdk.tsvb.models/-cube-image-filter/index.md) |
+| [loadCubeLut](load-cube-lut.md) | [androidJvm]<br>fun [loadCubeLut](load-cube-lut.md)(assetPath: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html)): [CubeImageFilter](../../com.effectssdk.tsvb.models/-cube-image-filter/index.md) |

@@ -16,7 +16,7 @@ androidJvm
 | frame |
 
 [androidJvm]\
-abstract fun [process](process.md)(frame: [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html), timestamp: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html))
+abstract fun [process](process.md)(frame: [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html), timestamp: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html))
 
 Process [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html) with timestamp.
 
@@ -72,7 +72,7 @@ androidJvm
 | frame |
 
 [androidJvm]\
-open fun [~~process~~](process.md)(frame: [Image](https://developer.android.com/reference/kotlin/android/media/Image.html), timestamp: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html))
+open fun [~~process~~](process.md)(frame: [Image](https://developer.android.com/reference/kotlin/android/media/Image.html), timestamp: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html))
 
 ---
 

@@ -3,4 +3,4 @@
 # loadCubeLut
 
 [androidJvm]\
-fun [loadCubeLut](load-cube-lut.md)(assetPath: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)): [CubeImageFilter](../../com.effectssdk.tsvb.models/-cube-image-filter/index.md)
+fun [loadCubeLut](load-cube-lut.md)(assetPath: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html)): [CubeImageFilter](../../com.effectssdk.tsvb.models/-cube-image-filter/index.md)

@@ -3,4 +3,4 @@
 # filterData
 
 [androidJvm]\
-val [filterData](filter-data.md): [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)
+val [filterData](filter-data.md): [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int-array/index.html)
