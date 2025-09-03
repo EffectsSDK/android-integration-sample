@@ -1,10 +1,10 @@
-![Effects SDK logo](assets/Logo.png "a title")
+![Effects SDK logo](assets/Logo.png "Logo")
 
 # Android video effects SDK
 
 Add real-time AI video enhancement that makes video meeting experience more effective and comfortable to your application in a few hours.
 
-Introducing our powerful and advanced web SDK for video communication products. With our web SDK, you can now elevate your video
+Introducing our powerful and advanced web SDK for video communication products. With our android SDK, you can now elevate your video
 conferencing experience with features like background blur, virtual background, auto-framing or smart zoom, beautification, and automatic
 color correction.
 
@@ -26,141 +26,183 @@ Overall, our SDK is the perfect solution for those looking to take their video c
 features like background blur, virtual background, auto-framing or smart zoom, beautification, and automatic color correction, you can
 create a professional and polished appearance during your video calls. Try our web SDK today and elevate your video conferencing experience.
 
-[Class reference](index.md)
-
 ## How to use
 
 ### Obtaining Effects SDK Customer ID
 
-To receive a new trial Customer ID please fill in the contact form on effectssdk.ai website.
+To receive a new trial Customer ID please fill in the contact form on [effectssdk.ai](https://effectssdk.ai/cp/registration) website.
 
-### Preparation
+### Setting up the Effects SDK dependency
 
-1. Get your own customer ID
-2. Add this dependency to your gradle file
-    1. implementation 'com.google.flogger:flogger:$version'
-    2. implementation 'com.google.flogger:flogger-system-backend:$version'
-    3. implementation 'com.google.guava:guava:$version'
-3. Optional:
-    1. implementation 'com.google.code.findbugs:jsr305:3.0.2' 
-4. Add camerax dependency (if camera pipeline required)
-    1. implementation "androidx.camera:camera-core:$androidXCameraVersion"
-    2. implementation "androidx.camera:camera-camera2:$androidXCameraVersion"
-    3. implementation "androidx.camera:camera-lifecycle:$androidXCameraVersion"
-5. Import AAR file by using android studio interface, or add it to your gradle script manually
-6. Call EffectsSDK.initialize(context, CUSTOMER_ID) method in your Application class (or Activity class) to load native library
-7. Call EffectsSDK.createSDKFactory(context) to get SDKFactory instance
+Add this line to your build.gradle file (please check the actual version [here](https://github.com/EffectsSDK/android-integration-sample/releases))
 
-
-### Usage
-
-1. Call sdkFactory.createPipeline() method (for image/camera pipeline)
-2. Set context for pipeline
-3. Set mode for pipeline (remove, replace, blur, no effects)
-4. Set additional parameters (background image, etc)
-5. Set OnFrameAvailableListener to Pipeline instance (if you need to get Android Bitmap)
-6. Set surface to pipeline (if you need to draw frame immediately)
-
-CameraPipeline handles camera input automatically. You should call the startPipeline() method to run it. Use setOutputSurface() method to
-attach a Surface object to the pipeline. You still can use onFrameAvailableListener to get Bitmap images from the pipeline.
-
-### Code example
-
-#### SDK initialization
-
-```kotlin
-class YourApplicationClass : Application() {
-    private val YOUR_CUSTOMER_ID = "customer_id"
-    override fun onCreate() { 
-        super.onCreate()
-        EffectsSDK.initialize(applicationContext, YOUR_CUSTOMER_ID) { sdkStatus -> 
-            when (sdkStatus) {
-                EffectsSDKStatus.ACTIVE -> TODO()
-                EffectsSDKStatus.INACTIVE -> TODO()
-                EffectsSDKStatus.EXPIRED -> TODO()
-                EffectsSDKStatus.UNAVAILABLE -> TODO()
-            }
-        }
-    }
-}
+```kts
+implementation("ai.effectssdk:video:+")
 ```
 
-#### SDK usage
+or include it as local aar if you use some specific version.
 
-```kotlin
+### Add Effects SDK dependencies
 
-private val sdkFactory = EffectsSDK.createSDKFactory()
+These libraries are used by EffectsSDK:
 
-private val pipeline = sdkFactory.createImagePipeline(
-	context = context,
-	mode = PipelineMode.BLUR,
-	blurPower = blurPower,
-	// Additional parameters
-)
-
-pipeline.setOnFrameAvailableListener { bitmap, timestamp ->
-	//handle pipeline output here
-}
+```kts
+implementation("com.google.flogger:flogger:0.9")
+implementation("com.google.flogger:flogger-system-backend:0.9")
+implementation("com.google.guava:guava:33.4.8-android")
 ```
 
+Also, add the CameraX dependency (if the CameraPipeline is required):
 
-#### Lite pipelines
-
-If you need only basic functions (like remove\replace\blur background), you can use lite pipeline instances.
-```kotlin
-
-private val sdkFactory = EffectsSDK.createSDKFactory()
-
-private val pipeline = sdkFactory.createLiteCameraPipeline(
-	context,
-	PipelineMode.REMOVE
-)
+```kts
+implementation("androidx.camera:camera-core:1.4.2")
+implementation("androidx.camera:camera-camera2:1.4.2")
+implementation("androidx.camera:camera-lifecycle:1.4.2")
 ```
 
-### Color filter example
+### Initialize Effects SDK
 
-|                                               |                                              |                                              |
-|-----------------------------------------------|----------------------------------------------|----------------------------------------------|
-| Original image                                | CS 1                                         | CS 2                                         |
-| ![alt text](assets/origin.jpg "CS 1 example") | ![alt text](assets/CS_1.jpg "CS 1 example")  | ![alt text](assets/CS_2.jpg "CS 1 example")  |
-| CS 3                                          | CS 4                                         | CS 5                                         |
-| ![alt text](assets/CS_3.jpg "CS 1 example")   | ![alt text](assets/CS_4.jpg "CS 1 example")  | ![alt text](assets/CS_5.jpg "CS 1 example")  |
-| CS 6                                          | CS 7                                         | CS 8                                         |
-| ![alt text](assets/CS_6.jpg "CS 1 example")   | ![alt text](assets/CS_7.jpg "CS 1 example")  | ![alt text](assets/CS_8.jpg "CS 1 example")  |
-| CS 9                                          | CS 10                                        | CS 11                                        |
-| ![alt text](assets/CS_9.jpg "CS 1 example")   | ![alt text](assets/CS_10.jpg "CS 1 example") | ![alt text](assets/CS_17.jpg "CS 1 example") |
-| CS 12                                         | CS 13                                        | CS 14                                        |
-| ![alt text](assets/CS_12.jpg "CS 1 example")  | ![alt text](assets/CS_13.jpg "CS 1 example") | ![alt text](assets/CS_14.jpg "CS 1 example") |
-| CS 15                                         | CS 16                                        | CS 17                                        |
-| ![alt text](assets/CS_15.jpg "CS 1 example")  | ![alt text](assets/CS_16.jpg "CS 1 example") | ![alt text](assets/CS_17.jpg "CS 1 example") |
-| CS 18                                         | CS 19                                        | CS 20                                        |
-| ![alt text](assets/CS_18.jpg "CS 1 example")  | ![alt text](assets/CS_19.jpg "CS 1 example") | ![alt text](assets/CS_20.jpg "CS 1 example") |
+Add the internet permission to your application manifest:
 
-
-
-## Migration to 2.11.x
-
-### Add customer id to your SDK initialize() call
-
-```kotlin
-EffectsSDK.initialize(context, YOUR_CUSTOMER_ID) { status ->
-   when (status) {
-      EffectsSDKStatus.ACTIVE -> TODO()
-      EffectsSDKStatus.INACTIVE -> TODO()
-      EffectsSDKStatus.EXPIRED -> TODO()
-      EffectsSDKStatus.UNAVAILABLE -> TODO()
-   }
-}
-```
-
-### Add internet permission
 ```manifest
 <manifest
-
  <uses-permission android:name = "android.permission.INTERNET" />
+ ...
+</manifest>
+```
+
+Then you can initialize EffectsSDK by using our (or your own) license server.
+
+```kotlin
+fun initEffectsSdk(context: Context, yourCustomerId: String) {
+	EffectsSDK.initialize(context, yourCustomerId) { sdkStatus: EffectsSDKStatus ->
+		when (sdkStatus) {
+			//Effects SDK initialized successfully
+			EffectsSDKStatus.ACTIVE -> TODO()
+			// Effects SDK is not initialized
+			EffectsSDKStatus.INACTIVE -> TODO()
+			//Effects SDK license expired
+			EffectsSDKStatus.EXPIRED -> TODO()
+			//Effects SDK is not available on this device
+			EffectsSDKStatus.UNAVAILABLE -> TODO()
+		}
+	}
+}
+```
+
+Or you can use a local key:
+
+```kotlin
+fun initializeEffectsSdkLocally(context: Context, localCustomerKey: String) {
+	val status = EffectsSDK.initialize(context, localCustomerKey)
+	when (status) {
+		EffectsSDKStatus.ACTIVE -> TODO()
+		EffectsSDKStatus.INACTIVE -> TODO()
+		EffectsSDKStatus.EXPIRED -> TODO()
+		EffectsSDKStatus.UNAVAILABLE -> TODO()
+	}
+}
+```
+
+### How to create and use a Pipeline instance
+
+Call EffectsSDK.createSDKFactory() to get an SDKFactory instance.
+
+```kotlin
+val sdkFactory = EffectsSDK.createSDKFactory()
+```
+
+Add the camera permission to your application manifest:
+
+```manifest
+<manifest
  <uses-permission android:name = "android.permission.CAMERA" />
  ...
 </manifest>
+```
 
+Then create and start a CameraPipeline instance. CameraPipeline processes camera input 
+automatically, but you need to call the startPipeline() method to run it.
 
+```kotlin
+val pipeline = sdkFactory.createCameraPipeline(
+	context = context,
+	mode = PipelineMode.BLUR,
+	blurPower = 0.7f
+	// Additional parameters
+)
+
+pipeline.startPipeline()
+```
+
+Or, if you need to process frames from any other sources, you can use ImagePipeline.
+
+```kotlin
+val pipeline = sdkFactory.createImagePipeline(
+	context = context,
+	mode = PipelineMode.REPLACE,
+	background = getBitmap("someResourceName"),
+)
+
+pipeline.process(input)
+```
+
+### How to process pipeline output
+
+You can render output frames to a Surface instance directly:
+
+```kotlin
+pipeline.setOutputSurface(youSurfaceInstance)
+```
+
+or you can use an OnFrameAvailableListener for bitmap processing.
+
+```kotlin
+pipeline.setOnFrameAvailableListener { bitmap: Bitmap, timestamp: Long ->
+	//Process frames here
+}
+```
+
+### How to release pipeline
+
+The release() method stops frame processing and releases all allocated resources.
+The pipeline cannot be used for any frame processing operations after this call.
+
+```kotlin
+pipeline.release()
+```
+
+### Lite pipeline
+
+If you only need basic functions (like remove/replace/blur background), you can use lite pipeline instances.
+
+```kotlin
+val pipeline = sdkFactory.createLiteCameraPipeline(
+	context = context,
+	blurPower = 0.75f,
+	pipelineMode = PipelineMode.BLUR
+)
+```
+
+## Documentation
+
+- [Class reference](index.md)
+- [CameraPipeline usage example](sample/CameraPipelineFragment.kt)
+- [ImagePipeline usage example](sample/ImagePipelineFragment.kt)
+- [Video recording example](sample/VideoRecordFragment.kt)
+- [Developer portal registration](https://effectssdk.ai/cp/registration)
+
+## Migration to 2.11.x
+
+### Add customer id to your EffectsSDK.initialize() call
+
+```kotlin
+EffectsSDK.initialize(context, YOUR_CUSTOMER_ID) { status ->
+	when (status) {
+		EffectsSDKStatus.ACTIVE -> TODO()
+		EffectsSDKStatus.INACTIVE -> TODO()
+		EffectsSDKStatus.EXPIRED -> TODO()
+		EffectsSDKStatus.UNAVAILABLE -> TODO()
+	}
+}
 ```
