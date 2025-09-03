@@ -4,7 +4,7 @@
 
 Add real-time AI video enhancement that makes video meeting experience more effective and comfortable to your application in a few hours.
 
-Introducing our powerful and advanced web SDK for video communication products. With our android SDK, you can now elevate your video
+Introducing our powerful and advanced android SDK for video communication products. With our android SDK, you can now elevate your video
 conferencing experience with features like background blur, virtual background, auto-framing or smart zoom, beautification, and automatic
 color correction.
 
@@ -24,7 +24,7 @@ environments or with poor quality cameras.
 
 Overall, our SDK is the perfect solution for those looking to take their video conferencing experience to the next level. With advanced
 features like background blur, virtual background, auto-framing or smart zoom, beautification, and automatic color correction, you can
-create a professional and polished appearance during your video calls. Try our web SDK today and elevate your video conferencing experience.
+create a professional and polished appearance during your video calls. Try our android SDK today and elevate your video conferencing experience.
 
 ## How to use
 
