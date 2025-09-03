@@ -40,7 +40,8 @@ Add this line to your build.gradle file (please check the actual version [here](
 implementation("ai.effectssdk:video:+")
 ```
 
-or include it as local aar if you use some specific version.
+or include it as local aar if you use some specific version (you can find archive
+with aar and demo app [here](https://github.com/EffectsSDK/android-integration-sample/releases)).
 
 ### Add Effects SDK dependencies
 
