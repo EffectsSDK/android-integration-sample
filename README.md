@@ -123,7 +123,7 @@ Add the camera permission to your application manifest:
 ```
 
 Then create and start a CameraPipeline instance. CameraPipeline processes camera input 
-automatically, but you need to call the startPipeline() method to run it.
+automatically, but you need to call the startPipeline() method to run it and stopPipeline() to stop frame processing.
 
 ```kotlin
 val pipeline = sdkFactory.createCameraPipeline(
@@ -134,6 +134,8 @@ val pipeline = sdkFactory.createCameraPipeline(
 )
 
 pipeline.startPipeline()
+//    ...
+pipeline.stopPipeline()
 ```
 
 Or, if you need to process frames from any other sources, you can use ImagePipeline.
