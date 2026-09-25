@@ -3,14 +3,16 @@
 # enableSharpening
 
 [androidJvm]\
-open fun [enableSharpening](enable-sharpening.md)(sharpnessEnabled: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html))
+open fun [enableSharpening](enable-sharpening.md)(sharpnessEnabled: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html))
 
-Enable sharpening option
+Enable\disable sharpening option.
+
+This option makes frame details more distinct. The strength of the effect is set by [setSharpeningStrength](set-sharpening-strength.md).
 
 #### Parameters
 
 androidJvm
 
-| |
-|---|
-| sharpnessEnabled |
+| | |
+|---|---|
+| sharpnessEnabled | -     set true if sharpening option required. |

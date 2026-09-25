@@ -1,0 +1,6 @@
+//[tsvb](../../../index.md)/[com.effectssdk.tsvb.pipeline](../index.md)/[ColorCorrectionConfig](index.md)/[ColorCorrectionConfig](-color-correction-config.md)
+
+# ColorCorrectionConfig
+
+[androidJvm]\
+constructor(autoMode: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = true, power: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html) = 1.0f, whiteBalance: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html) = 0.0f, exposure: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html) = 0.0f, temperature: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html) = 0.0f, tint: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html) = 0.0f, vibrance: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html) = 0.0f, contrast: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html) = 0.0f, updatePeriodMs: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html) = 200.0f)

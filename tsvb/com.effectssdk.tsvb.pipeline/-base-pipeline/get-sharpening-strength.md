@@ -3,8 +3,12 @@
 # getSharpeningStrength
 
 [androidJvm]\
-open fun [getSharpeningStrength](get-sharpening-strength.md)(): [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-float/index.html)
+open fun [getSharpeningStrength](get-sharpening-strength.md)(): [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html)
 
 Return current sharpening strength.
 
+Additional info [setSharpeningStrength](set-sharpening-strength.md)
+
 #### Return
+
+current sharpening strength, in 0..1

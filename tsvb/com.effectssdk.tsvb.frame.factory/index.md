@@ -6,4 +6,4 @@
 
 | Name | Summary |
 |---|---|
-| [FrameFactory](-frame-factory/index.md) | [androidJvm]<br>interface [~~FrameFactory~~](-frame-factory/index.md)<br>Frame factory interface |
+| [FrameFactory](-frame-factory/index.md) | [androidJvm]<br>interface [~~FrameFactory~~](-frame-factory/index.md)<br>Frame factory interface. |

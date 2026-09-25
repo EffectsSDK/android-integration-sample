@@ -10,3 +10,5 @@ Return current cube filter
 Additional info [setImageFilter](set-image-filter.md)
 
 #### Return
+
+current cube filter

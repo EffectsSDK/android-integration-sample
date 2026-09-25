@@ -5,4 +5,6 @@
 [androidJvm]\
 abstract fun [startPipeline](start-pipeline.md)()
 
-Enable pipeline
+Start pipeline.
+
+Opens the camera and starts frame processing.

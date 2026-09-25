@@ -15,6 +15,6 @@ If you use SurfaceView object for frame preview, you should ensure that holder.i
 
 androidJvm
 
-| |
-|---|
-| surface |
+| | |
+|---|---|
+| surface | -     surface to render to. Pass null if need to remove surface. |

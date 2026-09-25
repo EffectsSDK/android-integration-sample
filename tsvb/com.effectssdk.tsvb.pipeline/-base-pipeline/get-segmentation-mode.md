@@ -10,3 +10,5 @@ Return current segmentation mode
 Additional info [setSegmentationMode](set-segmentation-mode.md)
 
 #### Return
+
+current segmentation mode

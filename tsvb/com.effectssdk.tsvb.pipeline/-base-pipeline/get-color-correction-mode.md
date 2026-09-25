@@ -10,3 +10,5 @@ Return current color correction mode.
 Additional info [setColorCorrectionMode](set-color-correction-mode.md)
 
 #### Return
+
+current color correction mode

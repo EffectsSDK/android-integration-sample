@@ -7,16 +7,18 @@ abstract fun [process](process.md)(frame: [Bitmap](https://developer.android.com
 
 Process [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html).
 
+The result is delivered to the output surface and to the [OnFrameAvailableListener](../-on-frame-available-listener/index.md), see [BasePipeline.setOutputSurface](../-base-pipeline/set-output-surface.md) and [BasePipeline.setOnFrameAvailableListener](../-base-pipeline/set-on-frame-available-listener.md).
+
 #### Parameters
 
 androidJvm
 
-| |
-|---|
-| frame |
+| | |
+|---|---|
+| frame | -     image to process |
 
 [androidJvm]\
-abstract fun [process](process.md)(frame: [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html), timestamp: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html))
+abstract fun [process](process.md)(frame: [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html), timestamp: [Long](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html))
 
 Process [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html) with timestamp.
 
@@ -24,10 +26,10 @@ Process [Bitmap](https://developer.android.com/reference/kotlin/android/graphics
 
 androidJvm
 
-| |
-|---|
-| frame |
-| timestamp |
+| | |
+|---|---|
+| frame | -     image to process |
+| timestamp | -     frame timestamp, in microseconds |
 
 [androidJvm]\
 open fun [~~process~~](process.md)(frame: [Frame](../../com.effectssdk.tsvb.frame/-frame/index.md))
@@ -40,7 +42,9 @@ Use methods for bitmap/image instance directly
 
 ---
 
-Pass frame to image and process it.
+Process a [Frame](../../com.effectssdk.tsvb.frame/-frame/index.md).
+
+Use [process](process.md) with a [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html) instead: [Frame](../../com.effectssdk.tsvb.frame/-frame/index.md) cannot be built through the public API any more.
 
 #### Parameters
 
@@ -48,7 +52,7 @@ androidJvm
 
 | | |
 |---|---|
-| frame | -     new image |
+| frame | -     frame to process |
 
 [androidJvm]\
 open fun [~~process~~](process.md)(frame: [Image](https://developer.android.com/reference/kotlin/android/media/Image.html))
@@ -61,18 +65,18 @@ Use methods for bitmap/image instance directly
 
 ---
 
-Process [Image](https://developer.android.com/reference/kotlin/android/media/Image.html) with timestamp.
+Process [Image](https://developer.android.com/reference/kotlin/android/media/Image.html).
 
 #### Parameters
 
 androidJvm
 
-| |
-|---|
-| frame |
+| | |
+|---|---|
+| frame | -     image to process |
 
 [androidJvm]\
-open fun [~~process~~](process.md)(frame: [Image](https://developer.android.com/reference/kotlin/android/media/Image.html), timestamp: [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html))
+open fun [~~process~~](process.md)(frame: [Image](https://developer.android.com/reference/kotlin/android/media/Image.html), timestamp: [Long](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html))
 
 ---
 
@@ -88,7 +92,7 @@ Process [Image](https://developer.android.com/reference/kotlin/android/media/Ima
 
 androidJvm
 
-| |
-|---|
-| frame |
-| timestamp |
+| | |
+|---|---|
+| frame | -     image to process |
+| timestamp | -     frame timestamp, in microseconds |

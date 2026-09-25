@@ -11,7 +11,9 @@ Use ImagePipeline.process() directly.
 
 ---
 
-Frame factory interface
+Frame factory interface.
+
+Superseded by [com.effectssdk.tsvb.pipeline.ImagePipeline.process](../../com.effectssdk.tsvb.pipeline/-image-pipeline/process.md) taking a bitmap. No implementation is reachable through the public API any more, so an instance of this interface cannot be obtained.
 
 ## Functions
 

@@ -5,10 +5,12 @@
 [androidJvm]\
 fun interface [FPSListener](index.md)
 
-This listener used to preference monitor.
+Listener for monitoring pipeline performance.
+
+Attach it to a pipeline to follow how many frames per second it produces.
 
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [onFPSChanged](on-f-p-s-changed.md) | [androidJvm]<br>abstract fun [onFPSChanged](on-f-p-s-changed.md)(framesPerSecond: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html))<br>Every second update current fps value. |
+| [onFPSChanged](on-f-p-s-changed.md) | [androidJvm]<br>abstract fun [onFPSChanged](on-f-p-s-changed.md)(framesPerSecond: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html))<br>Reports the number of frames the pipeline produced since the previous report, at most once per second and never on a schedule of its own: the count is emitted while delivering a frame, so a pipeline that stops producing frames stops reporting instead of reporting 0. The first value after a pipeline starts covers less than a full second. |

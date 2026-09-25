@@ -3,7 +3,7 @@
 # onOrientationChanged
 
 [androidJvm]\
-abstract fun [onOrientationChanged](on-orientation-changed.md)(deviceOrientation: [DeviceOrientation](../-device-orientation/index.md), rotation: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html))
+abstract fun [onOrientationChanged](on-orientation-changed.md)(deviceOrientation: [DeviceOrientation](../-device-orientation/index.md), rotation: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html))
 
 This method will be called on each orientation change.
 
@@ -14,4 +14,4 @@ androidJvm
 | | |
 |---|---|
 | deviceOrientation | -     current device orientation. See [DeviceOrientation](../-device-orientation/index.md) |
-| rotation | -     current frame rotation in degrees |
+| rotation | -     rotation applied to the frame before segmentation, in degrees |

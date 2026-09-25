@@ -6,3 +6,5 @@
 abstract fun [release](release.md)()
 
 Release pipeline.
+
+Frees the graph and every resource the pipeline holds. The pipeline cannot be used after this call.
